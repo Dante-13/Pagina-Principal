@@ -1,0 +1,501 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tablas</title>
+	<style type="text/css">
+		{
+			margin: 0px;
+			padding: 0px;
+		}
+		h1{
+			font-size: 50px;
+			color:#f2f2f2;
+		}
+		h2,h5{
+			color:#272d2f;
+		}
+		header,nav,main,footer{
+			width: 950px;
+			/*height: 100px;*/
+			background-color:#FE724C;
+			padding: 50px;
+			margin: 0px auto
+		}
+		header{
+			text-align: center;
+			font-size:50px;
+			color:#FFC529;
+		}
+		nav{
+			background-color:#FFC529;
+			height: 50px;
+			padding: 50px 50px;
+		}
+		main{
+			background-color:#272d2f;
+			height: auto;
+		}
+		sub{
+			margin-top: auto;
+		}
+		footer{
+			background-color:#FE724C;
+			height: 30px;
+		}
+		section{
+			width:750px;
+			height: auto;
+			background-color:#f2f2f2;
+			margin: 30px auto;
+			padding: 30px 30px;
+		}
+		table{
+			background-color: #272d2f;
+			color: #f2f2f2;
+		}
+		#t01, #t01 th, #t01 td, #t02, #t02 th, #t02 td{
+			border-collapse: collapse;
+		}
+		#t01, #t01 th, #t01 td{
+			border: 2px solid #FFC529;
+			padding: 5px
+		}
+		#t01 th{
+			background-color: #FE724C;
+			color: #2A2642;
+			text-align: left;
+		}
+		#t02, #t02 th, #t02 td{
+			border: 2px solid #FE724C;
+			padding: 5px;
+			border-collapse: separate;
+			border-spacing: 10px;
+		}
+		#t02 th{
+			background-color: #FFC529;
+			color: #2A2642;
+			text-align: center;
+		}
+		#t03 tr:nth-child(even){
+			background-color: #FFC529;
+			color: #2A2642;
+		}
+		t03 tr:nth-child(odd){
+			background-color: #FFC529;
+			color: #2a2642
+		}
+		#t03 th{
+			background-color: #FE724C;
+		}
+		#t04 td:nth-child(even){
+			background-color: #FFC529;
+			color: #2A2642;
+		}
+		t04 td:nth-child(odd){
+			background-color: #FFC529;
+			color: #2a2642
+		}
+		#t04 th{
+			background-color: #FE724C;
+		}
+		#t05{
+			width: 650px;
+		}
+		#t05 th{
+			height: 50px;
+		}
+		#t05 td{
+			height: 50px;
+			padding-left: 10px;
+			vertical-align: bottom;
+		}
+		#t05, #t05 th, #t05 td{
+			border-collapse: collapse;
+		}
+		#t05 tr:hover{
+			background-color: #FFC529;
+			color: #2A2642;
+		}
+		#t05 th{
+			background-color: #FE724C;
+			color: #FFC529;
+		}
+		#t06{
+			width: 100%;
+		}
+		#t06 th, #t06 td{
+			text-align: center;
+			border: 1px solid #FFC529;
+			height; 25px;
+		}
+		#t06, #t06 th, #t06 td{
+		border-collapse: collapse;	
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>TABLAS EN HTML</h1>
+	</header>
+	<nav></nav>
+<main>
+		<section>
+			<h2>Tabla simple</h2>
+				<table border="1">
+					<thead>
+						<tr>
+							<th>Nombre</th>
+							<th>Direccion</th>
+							<th>Telefono</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Diana Laura Lopez</td>
+							<td>Privada Marina #13</td>
+							<td>2223485623</td>
+						</tr>
+						<tr>
+							<td>Gabriel Guevara</td>
+							<td>Avenida Margaritas #6578</td>
+							<td>2225686552</td>
+						</tr>
+						<tr>
+							<td>Esmeralda Reyes</td>
+							<td>Avenida Siempre Viva #223</td>
+							<td>2224562323</td>
+						</tr>
+						<tr>
+							<td>Juan Pablo Hernandez</td>
+							<td>Privada Atlas #23</td>
+							<td>2225615884</td>
+						</tr>
+						<tr>
+							<td>Benjamin Poblano</td>
+							<td>Privada Nezahualcoyotl #153</td>
+							<td>2229899211</td>
+						</tr>
+					</tbody>
+					<tfoot></tfoot>
+			</table>
+		</section>
+		<section>
+    	<h2>Tabla con bordes colapsados</h2>
+			  <table id="t01" border="1">
+				<thead>
+				  <tr>
+					<th>Nombre</th>
+					<th>Direccion</th>
+					<th>Telefono</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td>Diana Laura Lopez</td>
+					<td>Privada Marina #13</td>
+					<td>2223485623</td>
+				  </tr>
+				  <tr>
+					<td>Gabriel Guevara</td>
+					<td>Avenida Margaritas #6578</td>
+					<td>2225686552</td>
+				  </tr>
+				  <tr>
+					<td>Esmeralda Reyes</td>
+					<td>Avenida Siempre Viva #223</td>
+					<td>2224562323</td>
+				  </tr>
+				  <tr>
+					<td>Juan Pablo Hernandez</td>
+					<td>Privada Atlas #23</td>
+					<td>2225615884</td>
+				  </tr>
+				  <tr>
+					<td>Benjamin Poblano</td>
+					<td>Privada Nezahualcoyotl #153</td>
+					<td>2229899211</td>
+				  </tr>
+				</tbody>
+				<tfoot>
+				</tfoot>
+			</table>
+		</section>
+  <section>
+			<h2>Tabla que abarca mas de una columna</h2>
+			  <table id="t02" border="1">
+				<thead>
+				  <tr>
+					<th>Nombre</th>
+					<th>Direccion</th>
+					<th colspan="2">Telefonos</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td>Diana Laura Lopez</td>
+					<td>Privada Marina #13</td>
+					<td>2223485623</td>
+					<td>2226552314</td>
+				  </tr>
+				  <tr>
+					<td>Gabriel Guevara</td>
+					<td>Avenida Margaritas #6578</td>
+					<td>2225686552</td>
+					<td>2225145113</td>
+				  </tr>
+				  <tr>
+					<td>Esmeralda Reyes</td>
+					<td>Avenida Siempre Viva #223</td>
+					<td>2224562323</td>
+					<td>2223154255</td>
+				  </tr>
+				  <tr>
+					<td>Juan Pablo Hernandez</td>
+					<td>Privada Atlas #23</td>
+					<td>2225615884</td>
+					<td>2221242244</td>
+				  </tr>
+				  <tr>
+					<td>Benjamin Poblano</td>
+					<td>Privada Nezahualcoyotl #153</td>
+					<td>2229899211</td>
+					<td>2228885455</td>
+				  </tr>
+				</tbody>
+				<tfoot>
+				</tfoot>
+			</table>
+		</section>
+		<section>
+			<h2>Tabla con bandas o rayas horizontales de diferente color</h2>
+				 <table id="t03" border="1">
+					<thead>
+					  <tr>
+						<th>Nombre</th>
+						<th>Direccion</th>
+						<th>Telefono</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<td>Diana Laura Lopez</td>
+						<td>Privada Marina #13</td>
+						<td>2223485623</td>
+					  </tr>
+					  <tr>
+						<td>Gabriel Guevara</td>
+						<td>Avenida Margaritas #6578</td>
+						<td>2225686552</td>
+					  </tr>
+					  <tr>
+						<td>Esmeralda Reyes</td>
+						<td>Avenida Siempre Viva #223</td>
+						<td>2224562323</td>
+					  </tr>
+					  <tr>
+						<td>Juan Pablo Hernandez</td>
+						<td>Privada Atlas #23</td>
+						<td>2225615884</td>
+					  </tr>
+					  <tr>
+						<td>Benjamin Poblano</td>
+						<td>Privada Nezahualcoyotl #153</td>
+						<td>2229899211</td>
+					  </tr>
+					</tbody>
+					<tfoot>
+					</tfoot>
+		  </table>
+		</section>
+  <section>
+		  <h2>Tabla con bandas o rayas verticales de diferente color</h2>
+		  <table id="t04" border="1">
+		    <thead>
+		      <tr>
+		        <th>Nombre</th>
+		        <th>Direccion</th>
+		        <th>Telefono</th>
+				<th>Ciudad</th>
+	          </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td>Diana Laura Lopez</td>
+					<td>Privada Marina #13</td>
+					<td>2223485623</td>
+					<td>Puebla</td>
+				  </tr>
+				  <tr>
+					<td>Gabriel Guevara</td>
+					<td>Avenida Margaritas #6578</td>
+					<td>2225686552</td>
+					<td>Puebla</td>
+				  </tr>
+				  <tr>
+					<td>Esmeralda Reyes</td>
+					<td>Avenida Siempre Viva #223</td>
+					<td>2224562323</td>
+					<td>Puebla</td>
+				  </tr>
+				  <tr>
+					<td>Juan Pablo Hernandez</td>
+					<td>Privada Atlas #23</td>
+					<td>2225615884</td>
+					<td>Puebla</td>
+				  </tr>
+				  <tr>
+					<td>Benjamin Poblano</td>
+					<td>Privada Nezahualcoyotl #153</td>
+					<td>2229899211</td>
+					<td>Puebla</td>
+				  </tr>
+				  <tr>
+					<td>Diana Laura Lopez</td>
+					<td>Privada Marina #13</td>
+					<td>2223485623</td>
+					<td>Puebla</td>
+				  </tr>
+				</tbody>
+		   		<tfoot>
+	        	</tfoot>
+			</table>
+		</section>
+		<section>
+		  <h2>Tabla con resaltado flotante</h2>
+		  <table id="t05" border="1">
+		    <thead>
+		      <tr>
+		        <th>Nombre</th>
+		        <th>Direccion</th>
+		        <th>Telefono</th>
+		        <th>Ciudad</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <td>Diana Laura Lopez</td>
+		        <td>Privada Marina #13</td>
+		        <td>2223485623</td>
+		        <td>Puebla</td>
+	          </tr>
+		      <tr>
+		        <td>Gabriel Guevara</td>
+		        <td>Avenida Margaritas #6578</td>
+		        <td>2225686552</td>
+		        <td>Puebla</td>
+	          </tr>
+		      <tr>
+		        <td>Esmeralda Reyes</td>
+		        <td>Avenida Siempre Viva #223</td>
+		        <td>2224562323</td>
+		        <td>Puebla</td>
+	          </tr>
+		      <tr>
+		        <td>Juan Pablo Hernandez</td>
+		        <td>Privada Atlas #23</td>
+		        <td>2225615884</td>
+		        <td>Puebla</td>
+	          </tr>
+		      <tr>
+		        <td>Benjamin Poblano</td>
+		        <td>Privada Nezahualcoyotl #153</td>
+		        <td>2229899211</td>
+		        <td>Puebla</td>
+	          </tr>
+		      <tr>
+		        <td>Diana Laura Lopez</td>
+		        <td>Privada Marina #13</td>
+		        <td>2223485623</td>
+		        <td>Puebla</td>
+	          </tr>
+	        </tbody>
+		    <tfoot>
+	        </tfoot>
+	      </table>
+  </section>
+	<section style="overflow-x: auto">
+		<h2>Tabla responsive</h2>
+		<table id="t06">
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>DIANA LAURA LOPEZ</td>
+					<td>75</td>
+					<td>56</td>
+					<td>74</td>
+					<td>55</td>
+					<td>79</td>
+					<td>99</td>
+					<td>78</td>
+					<td>93</td>
+					<td>71</td>
+					<td>90</td>
+					<td>67</td>
+					<td>89</td>
+					<td>100</td>
+					<td>101</td>
+				</tr>
+				<tr>
+					<td>ESMERALDA REYES</td>
+					<td>79</td>
+					<td>58</td>
+					<td>74</td>
+					<td>56</td>
+					<td>73</td>
+					<td>93</td>
+					<td>78</td>
+					<td>97</td>
+					<td>77</td>
+					<td>90</td>
+					<td>67</td>
+					<td>89</td>
+					<td>100</td>
+					<td>101</td>
+				</tr>
+				<tr>
+					<td>JUAN PABLO HERNANDEZ</td>
+					<td>74</td>
+					<td>56</td>
+					<td>79</td>
+					<td>59</td>
+					<td>78</td>
+					<td>91</td>
+					<td>72</td>
+					<td>96</td>
+					<td>75</td>
+					<td>90</td>
+					<td>67</td>
+					<td>89</td>
+					<td>100</td>
+					<td>101</td>
+				</tr>
+			</tbody>
+			<tfoot></tfoot>
+		</table>
+	</section>
+	</main>
+	<footer>
+		<h5>Elaborado por Aldo Cortés Báez</h5>
+	</footer>
+</body>
+</html>
